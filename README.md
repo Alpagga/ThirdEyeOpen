@@ -1,1 +1,1 @@
-"# ThirdEyeOpen" 
+# ThirdEyeOpen
