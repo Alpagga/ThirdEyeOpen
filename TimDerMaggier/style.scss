@@ -1,0 +1,587 @@
+// COLOR PROFILES 
+$pink: #f03485;
+$yellow: #ffce55;
+$blue: #51cbf1;
+$orange: #fa9939;
+$green: #9dc705;
+$dkblue: #038ecf;
+$grey: #484848;
+$ltgrey: #acacac;
+$dkgrey: #222;
+$red: #f3655d;
+
+
+/*===========================
+START // General Page/Layout
+============================*/
+@import url(//fonts.googleapis.com/css?family=Patrick+Hand+SC|Bangers|Happy+Monkey);
+
+/* LAYOUT */
+.whole-container {
+  width: 100%;
+  height: auto;
+  margin: -10px;
+}
+
+section, 
+header {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  border-top: 1px solid $dkgrey;
+}
+
+.inner {
+  max-width: 1003px;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+
+.double, 
+.triple, 
+.double.triple {
+  max-width: 1003px;
+  display: block;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.half {
+  width: 50%;
+}
+
+.third {
+  width: 33.33%;
+}
+
+.two-thirds {
+  width: 66.66%;
+}
+
+/* TYPOGRAPHY */
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5 {
+  font-family: "Bangers", sans-serif;
+  color: $dkgrey;
+}
+
+p, 
+ul, 
+li, 
+ol {
+  font-family: 'Happy Monkey', cursive;
+  color: $dkgrey;
+}
+
+.blue {
+  color: $blue;
+}
+
+.dkblue {
+	color: $dkblue;
+}
+
+.yellow {
+  color: $yellow;
+}
+
+.orange {
+  color: $orange;
+}
+
+.pink {
+  color: $pink;
+}
+
+.green {
+  color: $green;
+}
+
+.red {
+	color: $red
+}
+
+/*===========================
+END // General Page/Layout
+============================*/
+
+
+/*===========================
+START // Comic (Dot) Panels
+Original by @ashandrien | Comic Book Half Tone Background | https://codepen.io/ashandrien/pen/rnzsd
+============================*/
+.panel {
+  padding: 1em;
+  background-size: 8px 8px, 8px 8px, 8px 8px, 8px 8px, 8px 8px, 100% 100%;
+  border-top: 3px solid #444;
+  margin-bottom: -4px;
+  &.red {
+    background-image: radial-gradient(ellipse farthest-corner, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 35%, #ffffff 30%, #ffffff 40%, rgba(0, 0, 0, 0) 90%), radial-gradient(ellipse farthest-corner at 0px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 8px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 0px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 40%), radial-gradient(ellipse farthest-corner at 8px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), linear-gradient(40deg, #bd2d10 0, #f4502f 30%, #ff6e51 50%, #f4502f 70%, #bd2d10 100%);
+  }
+  &.blue {
+    background-image: radial-gradient(ellipse farthest-corner, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 35%, #ffffff 30%, #ffffff 40%, rgba(0, 0, 0, 0) 90%), radial-gradient(ellipse farthest-corner at 0px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 8px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 0px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 40%), radial-gradient(ellipse farthest-corner at 8px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), linear-gradient(40deg, #038ecf 0, #51cbf1 30%, #7ff9ff 50%, #51cbf1 70%, #038ecf 100%);
+  }
+  &.grey {
+    background-image: radial-gradient(ellipse farthest-corner, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 35%, #ffffff 30%, #ffffff 40%, rgba(0, 0, 0, 0) 90%), radial-gradient(ellipse farthest-corner at 0px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 8px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 0px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 40%), radial-gradient(ellipse farthest-corner at 8px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), linear-gradient(40deg, #484848 0, #959595 30%, #acacac 50%, #959595 70%, #484848 100%);
+  }
+  &.ltgrey {
+    background-image: radial-gradient(ellipse farthest-corner, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 35%, #ffffff 30%, #ffffff 40%, rgba(0, 0, 0, 0) 90%), radial-gradient(ellipse farthest-corner at 0px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 8px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 0px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 40%), radial-gradient(ellipse farthest-corner at 8px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), linear-gradient(40deg, #acacac 0, #dadada 30%, #f2f2f2 50%, #dadada 70%, #acacac 100%);
+  }
+  &.yellow {
+    background-image: radial-gradient(ellipse farthest-corner, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 35%, #ffffff 30%, #ffffff 40%, rgba(0, 0, 0, 0) 90%), radial-gradient(ellipse farthest-corner at 0px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 8px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 0px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 40%), radial-gradient(ellipse farthest-corner at 8px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), linear-gradient(40deg, #ffce55 0, #fffc83 30%, #ffffb1 50%, #fffc83 70%, #ffce55 100%);
+  }
+  &.orange {
+    background-image: radial-gradient(ellipse farthest-corner, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 35%, #ffffff 30%, #ffffff 40%, rgba(0, 0, 0, 0) 90%), radial-gradient(ellipse farthest-corner at 0px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 8px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 0px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 40%), radial-gradient(ellipse farthest-corner at 8px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), linear-gradient(40deg, #fa9939 0, #ffc767 30%, #fff595 50%, #ffc767 70%, #fa9939 100%);
+  }
+  &.pink {
+    background-image: radial-gradient(ellipse farthest-corner, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 35%, #ffffff 30%, #ffffff 40%, rgba(0, 0, 0, 0) 90%), radial-gradient(ellipse farthest-corner at 0px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 8px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 0px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 40%), radial-gradient(ellipse farthest-corner at 8px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), linear-gradient(40deg, #f03485 0, #ff62b3 30%, #ff90e1 50%, #ff62b3 70%, #f03485 100%);
+  }
+  &.green {
+    background-image: radial-gradient(ellipse farthest-corner, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 35%, #ffffff 30%, #ffffff 40%, rgba(0, 0, 0, 0) 90%), radial-gradient(ellipse farthest-corner at 0px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 8px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 0px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 40%), radial-gradient(ellipse farthest-corner at 8px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), linear-gradient(40deg, #9dc705 0, #cbf533 30%, #f9ff61 50%, #cbf533 70%, #9dc705 100%);
+  }
+}
+/*===========================
+END // Comic (Dot) Panels
+============================*/
+
+/*===========================
+START // Big & "Fancy" Headlines
+Original by @sudocoda | Transparent Action Onomatopoeia | https://codepen.io/sudocoda/pen/xkLie
+============================*/
+.big {
+  font-family: "Bangers";
+  margin: 0 0 -1em 0;
+  text-shadow: -1px -1px yellow, 1px 1px orange,  2px 2px orange;
+  -webkit-transform: rotate(-10deg) skew(-10deg, 0);
+  -moz-transform: rotate(-10deg) skew(-10deg, 0);
+  -ms-transform: rotate(-10deg) skew(-10deg, 0);
+  -o-transform: rotate(-10deg) skew(-10deg, 0);
+  transform: rotate(-10deg) skew(-10deg, 0);
+  padding-bottom: 50px;
+  float: left;
+  width: 100%;
+}
+
+h1.big {
+  font-size: 150px;
+  margin-bottom: -.75em;
+}
+
+h2.big {
+  font-size: 110px;
+}
+
+h3.big {
+  font-size: 80px;
+}
+
+h4.big {
+  font-size: 60px;
+  margin-top: -.15em;
+}
+
+.burst {
+  background-image: url(//dl.dropboxusercontent.com/u/55861319/Woobox/FrontEnd/img/comicburst_1.png);
+  width: 100%;
+  height: auto;
+  min-height: 350px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  > .big {
+    transform: rotate(-22deg);
+    line-height: 1em;
+    font-size: 3em;
+    text-align: left;
+    margin: 2em 1em;
+    max-width: 500px;
+  }
+}
+/*===========================
+END // Big & "Fancy" Headlines
+============================*/
+
+/*===========================
+START // Main Header Panel
+============================*/
+header {
+  &.main {
+    margin: 0;
+    width: 100%;
+    display: block;
+    min-height: 400px;
+    border-top: none;
+    h1.big {
+      width: auto;
+      line-height: .75em;
+      margin-top: .5em;
+    }
+  }
+}
+/*===========================
+END // Main Header Panel
+============================*/
+
+/*===========================
+START // Comic (Content) Panes
+Original by @beyondSimple | Comic style panes | https://codepen.io/beyondSimple/pen/sDibB
+============================*/
+/* BASE PANE PIECES */
+.comic {
+  .single,
+  .triple,
+  .double,
+  .triple.double {
+    .comic-pane {
+      width: 98%;
+      max-width: 943px;
+      height: auto;
+      min-height: 220px;
+      top: .5em;
+      left: 1.5em;
+      position: relative;
+      margin: 0px 1%;
+      overflow: hidden;
+      .text {
+        width: 60%;
+        height: 90.5%;
+        position: absolute;
+        left: 1em;
+        transform: skew(-15deg);
+        background: white;
+        box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+        border-right: 3px solid;
+        &::before {
+          content: "";
+          dislay: block;
+          position: absolute;
+          height: 100%;
+          width: 4em;
+          left: -2em;
+          transform: skew(15deg);
+          background: white;
+          border-left: 1px solid rgba(0, 0, 0, 0.05);
+          -webkit-backface-visibility: hidden;
+        }
+        .holder {
+          width: 85%;
+          line-height: 1.2em;
+          margin-top: 1.5em;
+          margin-left: 2em;
+          transform: skew(15deg);
+        }
+        h2 {
+          font-size: 2em;
+          margin-bottom: 0;
+          text-shadow: -1px -1px black, 1px 1px black,  2px 2px black;
+          font-weight: 400;
+        }
+      }
+      .comic-image {
+        width: 42%;  
+        /* If you want a space between the text/image sections, just use: 
+        width: 40%; */
+        height: 100%;
+        right: -1.5em;
+        top: 0;
+        transform: skew(-15deg);
+        position: absolute;
+        overflow: hidden;
+        .cimg {
+          display: block;
+          transform: skew(15deg);
+          width: 100%;
+          height: 90%;
+          position: absolute;
+          left: -2em;
+          top: 1px;
+          background: url("//dl.dropboxusercontent.com/u/55861319/Photos/comics/MarvelGirl_1.jpg");
+          background-size: cover;
+          background-position: top center;
+        }
+      }
+      &:not(.image-heavy) {
+        .comic-image:hover {
+          transform: skew(0deg);
+          z-index: 1000;
+          right: -2em;
+          width: 100%;
+          overflow: visible;
+          .cimg {
+            transition: all 0.5s ease;
+            transform: skew(0deg);
+            width: 100%;
+            background-color: rgba(255,255,255,0.5);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: top right;
+          }
+        }
+      }
+    }
+  }
+}
+/* DIFFERENT LAYOUT OPTIONS (# of items/row) */
+.comic {
+  .double {
+    max-width: 963px;
+    width: 96%;
+    .half {
+      width: 50%;
+      .comic-pane {
+        .text {
+          left: 2em;
+          width: 50%;
+          .holder {
+            margin: 2em 1.5em 1.5em -.5em;
+            width: 90%;
+            h2 {
+              margin: 0.25em 0;
+              font-size: 1.75em;
+            }
+            p {
+              font-size: .8em;
+              line-height: 1.15em;
+            }
+          }
+        }
+        .comic-image {
+          width: 48%;
+          /* If you want the space between the text/image sections, just use: 
+          width: 47%; */
+          right: -1.25em;
+        }
+      }
+    }
+  }
+  .triple {
+    max-width: 963px;
+    width: 96%;
+    .third {
+      width: 33.33%;
+      .comic-pane {
+        .text {
+          left: 2em;
+          width: 60%;
+          .holder {
+            margin: 2em 1.5em 1.5em -.5em;
+            width: 95%;
+            h2 {
+              margin: 0.25em 0;
+              font-size: 1.5em;
+            }
+            p {
+              font-size: .8em;
+              line-height: 1.15em;
+            }
+          }
+        }
+        .comic-image {
+          width: 40%;
+          /* If you want the space between the text/image sections, just use: 
+          width: 39%; */
+          right: -1.25em;
+        }
+        &.image-heavy {
+          .text {
+            width: 10%;
+            &::before {
+              background: linear-gradient(to bottom, #fff 0, #fff 25%, rgba(255, 255, 255, 0) 26%);
+            }
+            .holder {
+              margin: 0;
+              width: 100%;
+              min-width: 220px;
+              height: 100%;
+              border-left: 30px solid Efff;
+              margin-left: -30px;
+              .trapezoid {
+                	height: 0px; 
+                  width: 43px; 
+                  padding: 0px;  
+                  -webkit-transform: skew(345deg); 
+                  transform: skew(345deg); 
+                  border-top: 199px solid #fff; 
+                  border-left: 50px solid transparent; 
+                  border-right: 0px solid transparent; 
+                  position:absolute;
+                  top:0;
+                  right:73%;
+              }
+              h2 {
+                transform: rotate(-90deg);
+                position: absolute;
+                left: -4em;
+                bottom: 4.5em;
+                font-size: 1.25em;
+                line-height: 2em;
+                width: 200px;
+              }
+              .caption {
+                visibility: hidden;
+                background: rgba(255, 255, 255, 0.75);
+                height: 77.75%;
+                width: 77.75%;
+                margin: 0 0 0 28%;
+                transform: skew(-15deg);
+                padding: 10%;
+                p {
+                  transform: skew(15deg);
+                }
+              }
+            }
+            &:hover {
+              .holder {
+                .caption {
+                  visibility: visible;
+                }
+              }
+            }
+          }
+          .comic-image {
+            width: 90%;
+          }
+        }
+      }
+    }
+    &.double {
+      max-width: 963px;
+      width: 96%;
+      .two-thirds {
+        width: 66.66%;
+        .comic-pane {
+          .text {
+            h2 {
+              margin-top: 0.25em;
+            }
+            p {
+              font-size: .9em;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*===========================
+END // Comic (Content) Panes
+============================*/
+
+/*===========================
+START // Comic Dialog & Thought Bubbles
+Original by @fliptheweb | Comics dialog boxes (webkit) | https://codepen.io/fliptheweb/pen/BAFjo
+============================*/
+.comics-dialog,
+.comics-thought {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  padding: 40px 20px;
+  background-color: #fff;
+  margin: 0em 2em 2em 4em;
+  -webkit-filter: drop-shadow(0 4px 0 #f3655d);
+  filter: drop-shadow(0 4px 0 #f3655d);
+  -moz-transition: 2s;
+  -o-transition: 2s;
+  -webkit-transition: 2s;
+  transition: 2s;
+  font-size: 1.1em;
+  text-align: center;
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+  }
+  &:hover {
+    top: -30px;
+    -webkit-filter: drop-shadow(0 10px 0 #f3655d);
+    filter: drop-shadow(0 10px 0 #f3655d);
+  }
+  > p {
+    font-weight: 400;
+    > strong {
+      font-weight: 800;
+    }
+  }
+  > h4 {
+   font-size: 1.5em;
+   font-weight: 400;
+   > strong {
+    text-shadow: -1px -1px #ffce55, 1px 1px #fa9939;
+   }
+  }
+}
+/* DIALOG BUBBLE */
+.comics-dialog {
+  width: 80%;
+  height: 65%;
+  padding: 2em 4em;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  &::after {
+    width: 65%;
+    height: 45%;
+    right: -2.5em;
+    bottom: -3.75em;
+    border-right: 90px solid #fff;
+    -moz-border-radius-bottomright: 370px 200px;
+    -webkit-border-bottom-right-radius: 370px 200px;
+    border-bottom-right-radius: 370px 200px;
+    -moz-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+  }
+}
+/* THOUGHT BUBBLE */
+.comics-thought {
+  width: 75%;
+  padding: 2em;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -moz-box-shadow: -60px -50px 0 -20px #fff, 60px -45px 0 -40px #fff;
+  -webkit-box-shadow: -60px -50px 0 -20px #fff, 60px -45px 0 -40px #fff;
+  box-shadow: -60px -50px 0 -20px #fff, 60px -45px 0 -40px #fff;
+  &::after {
+    width: 50%;
+    height: 70%;
+    right: -1.15em;
+    bottom: -.575em;
+    background: #fff;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    -moz-box-shadow: -140px 0px 0 #fff, -50px 30px 0 -10px #fff, -60px 120px 0 -60px #fff, -90px 155px 0 -65px #fff, -120px 175px 0 -70px #fff;
+    -webkit-box-shadow: -140px 0px 0 #fff, -50px 30px 0 -10px #fff, -60px 120px 0 -60px #fff, -90px 155px 0 -65px #fff, -120px 175px 0 -70px #fff;
+    box-shadow: -140px 0px 0 #fff, -50px 30px 0 -10px #fff, -60px 120px 0 -60px #fff, -90px 155px 0 -65px #fff, -120px 175px 0 -70px #fff;
+  }
+}
+/*===========================
+END // Comic Dialog & Thought Bubbles
+============================*/
+
+/* JUST FOR GUIDANCE */
+.inner-container {
+  position: absolute;
+  top: 0;
+  left: 1em;
+  width: 1003px;
+  border: 1px dashed red;
+  height: 6200px;
+}
