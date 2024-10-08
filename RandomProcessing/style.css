@@ -1,0 +1,10 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrollbars from appearing */
+    height: 100%; /* Ensure the body and html take up the full height */
+}
+/* Make sure the canvas fills the container */
+canvas {
+    display: block; /* Remove default inline spacing */
+}
