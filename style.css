@@ -1375,9 +1375,6 @@
         animation-range: 0svb 90svb;
       }
     }
-    .text-section > * + * {
-      margin-block-start: var(--size-5);
-    }
     .reveal-article__header {
       margin-block-end: var(--size-11);
     }
@@ -1486,57 +1483,6 @@
     }
     .scroll-snap__slide + .scroll-snap__slide {
       margin-inline-end: var(--size-9);
-    }
-    .team {
-      block-size: 90svb;
-      position: relative;
-    }
-    .team__list {
-      block-size: 45svb;
-      overflow-y: scroll;
-      max-inline-size: 40vi;
-      margin-inline: auto;
-      counter-reset: index;
-      background-color: oklch(var(--surface-color-0));
-      border: var(--border-size-1) solid oklch(var(--gray-4));
-    }
-    .team__member {
-      counter-increment: index;
-      border-block-end: var(--border-size-1) solid oklch(var(--gray4));
-    }
-    .team__member > figure {
-      display: flex;
-      align-items: center;
-      gap: var(--size-10);
-      padding: var(--size-10);
-    }
-    .team__member > figure > picture, .team__member > figure img {
-      -webkit-clip-path: circle(50%);
-              clip-path: circle(50%);
-    }
-    .team__member > figure > figcaption {
-      flex: 1;
-    }
-    .team__member > figure > figcaption > a {
-      display: inline-flex;
-      align-items: center;
-      font-weight: var(--font-weight-700);
-      font-size: var(--fluid-font-size-2);
-    }
-    .team__member > figure > figcaption > a::after {
-      content: " (Member #" counter(index) ")";
-      font-family: var(--font-mono);
-      font-weight: var(--font-weight-300);
-      font-size: var(--fluid-font-size-2);
-    }
-    @media (prefers-reduced-motion: no-preference) {
-      @supports (animation-timeline: view()) {
-        .team__member {
-          animation: animate-in linear forwards, animate-out linear forwards;
-          animation-timeline: view();
-          animation-range: entry, exit;
-        }
-      }
     }
     .stacking-cards {
       --card-height: 25vi;
