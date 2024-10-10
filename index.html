@@ -9,10 +9,10 @@
 
 
 <a class="header" href="index.html">
-    <img class="header" src="Assets/Pictures/ThirdEyeOpenChromeDropsWide.png" alt="ThirdEyeOpenOrginal">
+    <img class="header" class="animated-element" src="Assets/Pictures/ThirdEyeOpenChromeDropsWide.png" alt="ThirdEyeOpenOrginal">
 	<header class="header"></header>
 </a>
-	<!--<header class="header">ThirdEyeOpen</header>	-->
+
 
 <main class="main" data-layout="full-width">
 	<section class="section reveal-article">
@@ -190,12 +190,12 @@
 	</section>
 </main>
 
-
 <script>
-    // Add the animation class on page load
-    window.addEventListener('load', function() {
-      document.getElementById('header').classList.add('header');
-    });
-  </script>
+	window.onload = function() {
+		if(window.scrollY===0){
+			window.scrollTo(0, window.screen.height);
+		}
+	};
+</script>
 </body>
 </html>

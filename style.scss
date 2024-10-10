@@ -1287,11 +1287,6 @@
 		//Header Animation //
 		/////////////////////
 		
-		// Animation class to trigger on page load
-		.sticky-parallax-header-animation {
-			animation: sticky-parallax-header-move-and-size 2s ease-out forwards;
-		}
-		
 		@keyframes sticky-parallax-header-move-and-size {
 			from {
 				background-position: 50% 0;
@@ -1301,7 +1296,6 @@
 			}
 			to {
 				background-position: 50% 100%;
-				
 				height: 10svb;
 				font-size: var(--font-size-6);
 			}
@@ -1461,15 +1455,24 @@
 			font-size: var(--fluid-font-size-4);
 			text-align: center;
 			@supports (animation-range: 0svb 90svb) {
+				//Scroll-Animation:
+				//position: fixed;
+				//inset-block-start: 0;
+				//z-index: var(--layer-5);
+				//animation: sticky-parallax-header-move-and-size linear forwards;
+				//animation-timeline: scroll();
+				//animation-range: 0svb 90svb;
+
 				position: fixed;
 				inset-block-start: 0;
 				z-index: var(--layer-5);
-				animation: sticky-parallax-header-move-and-size linear forwards;
+				animation: sticky-parallax-header-move-and-size 2s linear forwards;
 				animation-timeline: scroll();
+				
 				animation-range: 0svb 90svb;
 			}
 		}
-		
+
 		.reveal-article {
 			&__header {
 				margin-block-end: var(--size-11);

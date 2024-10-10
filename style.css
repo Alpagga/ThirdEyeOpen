@@ -1195,9 +1195,6 @@
         transform: scale(0.9, 0.9);
       }
     }
-    .sticky-parallax-header-animation {
-      animation: sticky-parallax-header-move-and-size 2s ease-out forwards;
-    }
     @keyframes sticky-parallax-header-move-and-size {
       from {
         background-position: 50% 0;
@@ -1373,7 +1370,7 @@
         position: fixed;
         inset-block-start: 0;
         z-index: var(--layer-5);
-        animation: sticky-parallax-header-move-and-size linear forwards;
+        animation: sticky-parallax-header-move-and-size 2s linear forwards;
         animation-timeline: scroll();
         animation-range: 0svb 90svb;
       }
