@@ -1461,7 +1461,7 @@
 				@media (prefers-reduced-motion: no-preference) {
 					@supports (animation-timeline: view()) {
 						block-size: 100svb;
-						inline-size: 1600vmax;
+						inline-size: 800vmax;
 						will-change: transform;
 						animation: linear move forwards;
 						animation-timeline: --section-pin-tl;
@@ -1469,7 +1469,7 @@
 					}
 				}
 				& > * {
-					min-inline-size: 60vmax;
+					min-inline-size: 0vmax;
 					padding: 0 5vmax;
 				}
 				& > :where(h3) {

@@ -1386,7 +1386,7 @@
       @supports (animation-timeline: view()) {
         .horizontal-scroll__content {
           block-size: 100svb;
-          inline-size: 1600vmax;
+          inline-size: 800vmax;
           will-change: transform;
           animation: linear move forwards;
           animation-timeline: --section-pin-tl;
@@ -1395,7 +1395,7 @@
       }
     }
     .horizontal-scroll__content > * {
-      min-inline-size: 60vmax;
+      min-inline-size: 0vmax;
       padding: 0 5vmax;
     }
     .horizontal-scroll__content > :where(h3) {
