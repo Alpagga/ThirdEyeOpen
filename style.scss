@@ -1283,19 +1283,33 @@
 			}
 		}
 
+		/////////////////////
+		//Header Animation //
+		/////////////////////
+		
+		// Animation class to trigger on page load
+		.sticky-parallax-header-animation {
+			animation: sticky-parallax-header-move-and-size 2s ease-out forwards;
+		}
+		
 		@keyframes sticky-parallax-header-move-and-size {
 			from {
 				background-position: 50% 0;
 				height: 100svb;
 				font-size: var(--fluid-font-size-4);
+				background-color: oklch(var(--blue-3));
 			}
 			to {
 				background-position: 50% 100%;
-				background-color: oklch(var(--blue-3));
+				
 				height: 10svb;
 				font-size: var(--font-size-6);
 			}
 		}
+
+		/////////////////////////
+		//Header Animation End //
+		/////////////////////////
 
 		@keyframes reveal {
 			from {
