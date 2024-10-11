@@ -867,17 +867,11 @@
   /* Base Styles - These styles are applied to the entire website
   ================================ */
   html {
-    background-color: oklch(var(--document-surface-color));
-    color: oklch(var(--text-color-1));
-    accent-color: oklch(var(--link-color));
-    caret-color: oklch(var(--link-color));
-    scrollbar-color: oklch(var(--scrollthumb-color));
+    background-color: black;
   }
   body {
     grid-template-rows: auto 1fr auto;
-    background-image: radial-gradient(circle at center, oklch(var(--text-color-2)/0), oklch(var(--document-surface-color))), radial-gradient(circle at 1px 1px, oklch(var(--text-color-2)/0.47) 1px, oklch(var(--text-color-2)/0) 0);
-    background-size: 200px 200px, 40px 40px;
-    background-repeat: repeat;
+    background-color: black;
     font-family: var(--font-sans);
     font-weight: var(--font-weight-400);
     font-size: var(--font-size-300);
@@ -891,7 +885,7 @@
     --layout-offset: var(--size-5);
     --layout-breakout-content-size: 80vi;
     --layout-breakout-size: calc((var(--layout-breakout-content-size) - var(--layout-content-size)) / 2);
-    --layout-content-size: 50vi;
+    --layout-content-size: 70vi;
     display: grid;
     grid-template-columns: [full-width-start] minmax(var(--layout-offset), 1fr) [breakout-start] minmax(0, var(--layout-breakout-size)) [content-start] min(var(--layout-content-size), 100% - var(--layout-offset) * 2) [content-end] minmax(0, var(--layout-breakout-size)) [breakout-end] minmax(var(--layout-offset), 1fr) [full-width-end];
   }
@@ -1355,13 +1349,6 @@
       place-items: center;
       block-size: 100svb;
       inline-size: 100%;
-      background-image: url("https://imgur.com/breYMph.jpeg");
-      background-image: -webkit-image-set("https://imgur.com/breYMph.jpeg.avif" type("image/avif"), "https://imgur.com/breYMph.jpeg.webp" type("image/webp"), "https://imgur.com/breYMph.jpeg" type("image/jpeg"));
-      background-image: image-set("https://imgur.com/breYMph.jpeg.avif" type("image/avif"), "https://imgur.com/breYMph.jpeg.webp" type("image/webp"), "https://imgur.com/breYMph.jpeg" type("image/jpeg"));
-      background-position: 50% 50%;
-      background-size: cover;
-      background-blend-mode: soft-light;
-      color: oklch(var(--blue-0));
       font-size: var(--fluid-font-size-4);
       text-align: center;
     }
@@ -1486,7 +1473,7 @@
     }
     .stacking-cards {
       --card-height: 25vi;
-      --card-margin: 4vi;
+      --card-margin: 15vi;
       --card-top-offset: 1rem;
     }
     .stacking-cards__list {
@@ -1578,7 +1565,7 @@
       min-block-size: 100svb;
       inline-size: 100%;
       max-inline-size: 100vi;
-      background-color: oklch(var(--gray-12));
+      background-color: black;
       color: oklch(var(--blue-0));
     }
     @media (prefers-reduced-motion: no-preference) {
@@ -1638,7 +1625,7 @@
       position: relative;
       overflow-x: hidden;
       padding: 50px 10vw;
-      background-color: oklch(var(--sand-3));
+      background-color: black;
     }
     .horizontal-scroll__creator-content {
       display: flex;
