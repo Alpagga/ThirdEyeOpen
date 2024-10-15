@@ -2,15 +2,85 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<title>HTML5 Doctor | Element Index</title>
-<link rel="stylesheet" href="style.css" />
-
+    <title>VideoArchiv</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
-<body id="home">
-    <a href="https://www.youtube.com/embed/7vdhErNQKm4?controls=0&showinfo=0&rel=0&autoplay=1&loop=1">Life is Twisted</a>
-    <br>
-    <a href="https://www.youtube.com/embed/ezUiHzxKU-c?controls=0&showinfo=0&rel=0&autoplay=1&loop=1">Mountains and Skateboards</a>
-    <br>
-    <a href="LifeIsTwisted.html">Life is Twisted</a>
+<body>
+
+
+<a class="header" href="../index.html">
+    <img class="header" class="animated-element" src="Assets/Pictures/ThirdEyeOpenChromeDropsWide.png" alt="VideoArchiv">
+	<header class="header"></header>
+</a>
+
+
+<main class="main" data-layout="full-width">
+
+	<section class="section stacking-cards">
+		<header class="section__header">
+			<h2>Video Archiv</h2>
+			<p>The polar bear was previously considered to be in its own genus, Thalarctos. However, evidence of hybrids between polar bears and brown bears, and of the recent evolutionary divergence of the two species, does not support the establishment of this separate genus, and the accepted scientific name is now therefore Ursus maritimus, as Phipps originally proposed.</p>
+
+		</header>
+
+		<ul class="stacking-cards__list" role="list">
+			<li class="stacking-cards__item">
+				<figure class="stack-card">
+					<picture>
+						<img loading="lazy" decoding="async" width="1080" height="1080" src="Assets/Pictures/RandomProcessing/1.png" alt="1" />
+					</picture>
+					<figcaption class="stack-card__content">
+						<h3>ThirdEyeOpen</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a class="stack-card__url" href="#">See full Video</a>
+					</figcaption>
+				</figure>
+			</li>
+			<li class="stacking-cards__item">
+				<figure class="stack-card">
+					<picture>
+						<img loading="lazy" decoding="async" width="1080" height="1080" src="Assets/Pictures/RandomProcessing/2.png" alt="2" />
+					</picture>
+					<figcaption class="stack-card__content">
+						<h3>Mountains and Skateboards</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a class="stack-card__url" href="https://www.youtube.com/embed/ezUiHzxKU-c?controls=0&showinfo=0&rel=0&autoplay=1&loop=1">See full Video</a>
+					</figcaption>
+				</figure>
+			</li>
+			<li class="stacking-cards__item">
+				<figure class="stack-card">
+					<picture>
+						<img loading="lazy" decoding="async" width="1080" height="1080" src="Assets/Pictures/RandomProcessing/3.png" alt="3" />
+					</picture>
+					<figcaption class="stack-card__content">
+						<h3>Life is Twisted</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a class="stack-card__url" href="https://www.youtube.com/embed/7vdhErNQKm4?controls=0&showinfo=0&rel=0&autoplay=1&loop=1">See full Video</a>
+					</figcaption>
+				</figure>
+			</li>
+		</ul>
+	</section>
+
+    <section class="section reveal-article">    
+        <header class="reveal-article__header">
+            <h1 class="reveal-article__title">Youtube Link here!</h1>
+        </header>
+    </section>
+
+</main>
+
+
+<script>
+	window.onload = function() {
+		if(window.scrollY===0){
+			window.scrollTo({
+				top: window.screen.height,
+				behavior: "smooth",
+			});
+		}
+	};
+</script>
 </body>
 </html>
