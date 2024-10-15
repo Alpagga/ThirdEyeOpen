@@ -1,0 +1,25 @@
+<html>
+<head>
+</head>
+<body>
+  <div id="canvas" width="1600" height="800"></div>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/numeric/1.2.6/numeric.js"></script>
+  <script src="./js/black-hole.min.js"></script>
+  
+  
+  <script>
+    //BlackHole.blackHoleifyImage('canvas', './images/ThirdEyeOpenOrginal.JPEG');
+    BlackHole.blackHoleifyImage('canvas', './images/ThirdEyeOpenOrginal.JPEG', {
+        distanceFromBlackHole: 80, // 80 is default
+        polynomialDegree: 1, // 2 is default
+        numAngleTableEntries: 1000, // 1000 is default. More might improve quality but impact performance
+        fovAngleInDegrees: 60, // 73 is default. Yeah, it's an unusual choice, but it just looked cool, ok?
+    });
+  </script>
+
+
+
+</body>
+</html>
