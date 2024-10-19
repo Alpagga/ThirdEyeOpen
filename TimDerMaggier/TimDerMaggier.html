@@ -6,19 +6,32 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+	
+	
+	<a class="header" href="../index.html">
+		<img class="header" class="animated-element" src="Assets/Pictures/ChromeDropsWide.png" alt="ThirdEyeOpenOrginal">
+		<header class="header"></header>
+	</a> 
 
-   
-    <img class="header" src="Assets/Pictures/ThirdEyeOpenOrginal.JPEG">
-    <header class="header">
-        Tim der Maggier
-    </header>
+<main class="main" data-layout="full-width" style="margin-top: 30vh;">
+	
+	<header class="section__header horizontal-scroll__header" data-layout="full-width" style="position: relative; width: 100%; height: 100vh; overflow: hidden;">
+		<img src="Assets/Pictures/Start.png" alt="ThirdEyeOpenOrginal" style="width: 100%; height: 100%; display: block;">
+	</header>
 
-<main class="main" data-layout="full-width">
+	<section class="horizontal-scroll__creator-section" data-layout="full-width">
+		<div class="horizontal-scroll__creator-content" data-layout="breakout">
+			<h3>
+				The story of a little Maggier which has a absurd love to Maggie :)
+			</h3>
+		</div>
+	</section>
+
 		<section class="horizontal-scroll__section" data-layout="full-width">
 			<div class="horizontal-scroll__section-wrapper">
 				<div class="horizontal-scroll__content">
 					
-					<h3>The story of a little Maggier which has a absurd love to Maggie :)</h3>
+					<h3 style="color: black;">Can you see me?Can you see me?Can you see me?Can you see me?Can you see me?Can you see me?</h3>
 
 					<picture>
 						<img loading="lazy" decoding="async" width="700" height="540" src="Assets/Pictures/1.png" alt="1" />
@@ -71,12 +84,19 @@
           			<picture>
 						<img loading="lazy" decoding="async" width="700" height="540" src="Assets/Pictures/17.png" alt="17" />
 					</picture>
-
-					<h3>Wir sind die Schöpfer vom Suppengott! Man könnte uns mit Streifen hinten machen!</h3>
 					
+					<h3 style="color: black;">Can you see me?Can you see me?Can you see me?Can you see me?Can you see me?Can you see me?</h3>
+					<h3 style="color: black;">Can you see me?Can you see me?Can you see me?</h3>
+
 				</div>
 			</div>
 		</section>
+
+		<header class="section__header horizontal-scroll__header" data-layout="full-width" style="position: relative; width: 100%; height: 100vh; overflow: hidden;">
+			<img src="Assets/Pictures/End.png" alt="ThirdEyeOpenOrginal" style="width: 100%; height: 100%; display: block;">
+		</header>
+		
+
 		<section class="horizontal-scroll__creator-section" data-layout="full-width">
 			<div class="horizontal-scroll__creator-content" data-layout="breakout">
 				<h3>
@@ -91,5 +111,17 @@
 			</div>
 		</section>
 </main>
+
+<script>
+	window.onload = function() {
+		if(window.scrollY===0){
+			window.scrollTo({
+				top: window.screen.height,
+				behavior: "smooth",
+			});
+		}
+	};
+</script>
+
 </body>
 </html>

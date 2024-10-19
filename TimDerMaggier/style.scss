@@ -934,7 +934,7 @@
 		--layout-offset: var(--size-5);
 		--layout-breakout-content-size: 80vi;
 		--layout-breakout-size: calc((var(--layout-breakout-content-size) - var(--layout-content-size)) / 2);
-		--layout-content-size: 50vi;
+		--layout-content-size: 100vi;
 		display: grid;
 		grid-template-columns: 
 			[full-width-start]
@@ -1278,19 +1278,27 @@
 			}
 		}
 
+		/////////////////////
+		//Header Animation //
+		/////////////////////
+		
 		@keyframes sticky-parallax-header-move-and-size {
 			from {
 				background-position: 50% 0;
 				height: 100svb;
 				font-size: var(--fluid-font-size-4);
+				background-color: oklch(var(--blue-3));
 			}
 			to {
 				background-position: 50% 100%;
-				background-color: oklch(var(--blue-3));
 				height: 10svb;
 				font-size: var(--font-size-6);
 			}
 		}
+
+		/////////////////////////
+		//Header Animation End //
+		/////////////////////////
 
 		@keyframes reveal {
 			from {
@@ -1387,18 +1395,13 @@
 			place-items: center;
 			block-size: 100svb;
 			inline-size: 100%;
-			background-color: black;
-			background-position: 50% 50%;
-			background-size: cover;
-			background-blend-mode: soft-light;
-			color: oklch(var(--blue-0));
 			font-size: var(--fluid-font-size-4);
 			text-align: center;
 			@supports (animation-range: 0svb 90svb) {
 				position: fixed;
 				inset-block-start: 0;
 				z-index: var(--layer-5);
-				animation: sticky-parallax-header-move-and-size linear forwards;
+				animation: sticky-parallax-header-move-and-size 2s linear forwards;
 				animation-timeline: scroll();
 				animation-range: 0svb 90svb;
 			}
@@ -1408,7 +1411,6 @@
 			&__header {
 				display: grid;
 				place-items: center;
-				gap: var(--size-5);
 				min-block-size: 100svb;
 				margin: 0;
 				background-color: black;
